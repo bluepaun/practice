@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="150px" height="110px" viewBox="0 0 150 110" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M130 0C141.047 0 150 8.9528 150 20L150 90C150 101.047 141.047 110 130 110L20 110C8.9528 110 0 101.047 0 90L0 20C0 8.9528 8.9528 0 20 0L130 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Group-Mask">
+    <path d="M130 0C141.047 0 150 8.9528 150 20L150 90C150 101.047 141.047 110 130 110L20 110C8.9528 110 0 101.047 0 90L0 20C0 8.9528 8.9528 0 20 0L130 0Z" id="Mask" fill="#3EBC5A" stroke="none" />
+    <g clip-path="url(#clip_1)">
+      <g id="Group" transform="translate(0 38)">
+        <path d="M0 30.9999C3.77575 31.0104 11.8702 30.0835 18.9065 21.3034C25.9428 12.5234 24.4981 0 24.4981 0" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+        <path d="M49.4974 30.9999C45.7216 31.0104 37.6272 30.0835 30.5909 21.3034C23.5545 12.5234 24.9993 0 24.9993 0" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+        <path d="M50.7488 30.9999C54.5246 31.0104 62.619 30.0835 69.6553 21.3034C76.6917 12.5234 75.2469 0 75.2469 0" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+        <path d="M100.246 30.9999C96.4705 31.0104 88.3761 30.0835 81.3397 21.3034C74.3034 12.5234 75.7482 0 75.7482 0" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+        <path d="M100.503 30.9999C104.278 31.0104 112.373 30.0835 119.409 21.3034C126.445 12.5234 125.001 0 125.001 0" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+        <path d="M150 30.9999C146.224 31.0104 138.13 30.0835 131.093 21.3034C124.057 12.5234 125.502 0 125.502 0" id="Line" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+      </g>
+    </g>
+  </g>
+</svg>
