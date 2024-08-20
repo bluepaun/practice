@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 1rem;
   list-style: none;
   box-sizing: border-box;
   color: black;
@@ -33,7 +32,7 @@ header {
   padding: 1.5em;
 }
 
-header .icon-group {
+.icon-group {
   display: flex;
   align-items: center;
 }
@@ -42,10 +41,11 @@ header .icon-group {
   text-transform: uppercase;
   color: var(--green);
   font-weight: 700;
-  margin-left: 1em;
+  margin-left: 1rem;
+  font-size: 1em;
 }
 
-#icon {
+.icon {
   width: 3em;
   height: 3em;
   background: url("image/icon.svg") no-repeat center ;
@@ -68,8 +68,64 @@ header ul {
 
 footer {
   background-color: var(--green);
+  padding: 0 1.5em;
 }
 
 footer *, footer .icon-group h1 {
   color: white;
 }
+
+footer nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: rgba(255,255,255,0.1) solid 1px;
+}
+
+footer .icon-group {
+  padding-top: 1em;
+}
+
+footer nav .icon-group .icon{
+  background-image: url("image/icon-color-invert.svg");
+}
+
+footer nav div:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.6fr 1fr; 
+  gap: 0px 0px; 
+  grid-auto-flow: column;
+}
+
+footer nav div:nth-child(2) h6 {
+  font-size: 0.7em;
+  color:#A6DFB1;
+  align-self: center;
+}
+
+footer nav div:nth-child(2) ul {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+footer nav div:nth-child(2) ul li {
+  font-size: 0.9em;
+}
+
+.copyright {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-between;
+  font-size: 0.7em;
+  opacity: 0.8;
+}
+
+.copyright div {
+  display: flex;
+  gap: 1em;
+  text-decoration: underline;
+}
+
