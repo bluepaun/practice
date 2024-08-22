@@ -5,21 +5,26 @@
   border: none;
   margin: 0;
   padding: 0;
-  font-weight: 400;
   list-style: none;
   box-sizing: border-box;
-  color: black;
   text-decoration: none;
+}
+
+a {
+  color: inherit;
 }
 
 :root {
   --green : #3EBC5A;
+  --gray : #EFF2F4;
 }
 
 body, html {
-  background-color: #EFF2F4;
+  background-color: var(--gray);
   font-family: "Open Sans", sans-serif;
   width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
   min-height: 100%;
 }
 
@@ -37,7 +42,7 @@ header {
   align-items: center;
 }
 
-.icon-group h1 {
+.icon-group h5 {
   text-transform: uppercase;
   color: var(--green);
   font-weight: 700;
@@ -58,6 +63,10 @@ header ul {
   gap: 2em;
 }
 
+header ul li {
+  color:black;
+}
+
 .contacts .contact-btn {
   border: 1px black solid;
   padding: 0.8em 1.8em;
@@ -66,12 +75,96 @@ header ul {
   cursor: pointer;
 }
 
+.title {
+  display: grid;
+  grid-template-rows: 1fr 2.5fr;
+  grid-template-columns: 2.5fr 1fr;
+  padding-top: 5em;
+}
+
+.title h1{
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.1em;
+  padding: 0 1.5rem 2.5rem 1.5rem;
+}
+
+h1 .hl {
+  color: var(--green);
+}
+
+.title-explain {
+  padding-right: 1.5rem;
+  padding-bottom: 2.5rem;
+  display: grid;
+  grid-template-rows: 3fr 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title-explain p {
+  padding-right: 1rem;
+  grid-column: span 2;
+}
+
+.title-reviewer {
+  display: flex;
+}
+
+.reviewer-profile {
+  background: url("image/pexels-keynotez-1334945.jpg") no-repeat center;
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: var(--gray) 0.2rem solid;
+}
+
+.reviewer-profile:nth-child(2) {
+  background-image: url("image/pexels-olly-3763188.jpg");
+  transform: translate(-1rem, 0);
+}
+
+.reviewer-profile:nth-child(3) {
+  background-image: url("image/pexels-pixabay-34534.jpg");
+  transform: translate(-2rem, 0);
+}
+
+.reviewer-profile:nth-child(4) {
+  background-image: url("image/pexels-pixabay-415829.jpg");
+  transform: translate(-3rem, 0);
+}
+
+.title-explain a {
+  background-color: var(--green);
+  color: white;
+  text-align: center;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  width: 10.5rem;
+}
+
+.title-explain a img {
+  width: 1.5em;
+  height: 1.5em;
+  filter: invert(100%) sepia(0%) saturate(7459%) hue-rotate(302deg) brightness(108%) contrast(97%);
+}
+
+.title-photo {
+  background: url("image/pexels-matilda-wormwood-4099467.jpg") no-repeat center;
+  background-size: cover;
+  grid-column: span 2;
+}
+
 footer {
   background-color: var(--green);
   padding: 0 1.5em;
 }
 
-footer *, footer .icon-group h1 {
+footer *, footer .icon-group h5 {
   color: white;
 }
 
