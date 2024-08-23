@@ -75,34 +75,38 @@ header ul li {
   cursor: pointer;
 }
 
-.title {
-  display: grid;
-  grid-template-rows: 1fr 2.5fr;
-  grid-template-columns: 2.5fr 1fr;
+section {
   padding-top: 5em;
 }
 
-.title h1{
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 1.1em;
-  padding: 0 1.5rem 2.5rem 1.5rem;
+.title {
+  display: grid;
+  grid-template-rows: 1fr 2.5fr;
+  grid-template-columns: 2fr 1fr;
 }
 
-h1 .hl {
+.section-title {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.1em;
+  padding: 0 8rem 2.5rem 1.5rem;
+}
+
+.section-title .hl {
   color: var(--green);
 }
 
-.title-explain {
+.section-explain {
   padding-right: 1.5rem;
   padding-bottom: 2.5rem;
   display: grid;
-  grid-template-rows: 3fr 3rem;
+  grid-template-rows: 3fr 3.5rem;
   grid-template-columns: 1fr 1fr;
 }
 
-.title-explain p {
+.section-explain p {
   padding-right: 1rem;
   grid-column: span 2;
 }
@@ -135,19 +139,24 @@ h1 .hl {
   transform: translate(-3rem, 0);
 }
 
-.title-explain a {
-  background-color: var(--green);
-  color: white;
-  text-align: center;
-  border-radius: 500px;
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5em;
-  width: 10.5rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.8rem 1.5rem;
+  border-radius: 500px;
 }
 
-.title-explain a img {
+.title a {
+  background-color: var(--green);
+  color: white;
+  text-align: center;
+  gap: 0.5em;
+}
+
+.title a img {
   width: 1.5em;
   height: 1.5em;
   filter: invert(100%) sepia(0%) saturate(7459%) hue-rotate(302deg) brightness(108%) contrast(97%);
@@ -157,6 +166,102 @@ h1 .hl {
   background: url("image/pexels-matilda-wormwood-4099467.jpg") no-repeat center;
   background-size: cover;
   grid-column: span 2;
+}
+
+.services {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  overflow: hidden;
+}
+
+.services .panel {
+  grid-column: span 2;
+  width: 100%;
+  position: relative;
+}
+
+.panel > div {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.services .panel-nav {
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.panel-nav .padding {
+  width: 1rem;
+}
+
+.panel-nav li:last-of-type  .padding{
+  width: 7rem;
+}
+
+.services .btn {
+  border: #D0D1D3 1px solid;
+}
+
+.services .panel-nav .btn.selected{
+  background-color: var(--green);
+  border-color: var(--green);
+  color: var(--gray);
+}
+
+.services .move-btns {
+  display: flex;
+  position:absolute;
+  top: 0;
+  right: 1.5rem;
+  gap: 0.5rem;
+}
+
+.services .move-btns .btn {
+  padding:0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--gray);
+}
+
+.service-items {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.service-items .padding {
+  width: 0.5rem;
+}
+
+.service-items li {
+  width: 20rem;
+  padding-bottom: 1.5rem;
+}
+
+.service-items li:first-of-type, .service-items li:last-of-type {
+  width: fit-content;
+  background-color: inherit;
+}
+
+.service-items .item-image {
+  width: 100%;
+}
+
+.service-items span {
+  display: block;
+}
+
+.service-items .item-title {
+  padding-top: 0.8rem;
+  padding-bottom: 0.3rem;
+}
+
+.service-items .item-price {
+  font-size: 0.8rem;
+  opacity: 0.5;
 }
 
 footer {
