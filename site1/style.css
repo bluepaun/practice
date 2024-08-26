@@ -91,7 +91,7 @@ section {
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1.1em;
-  padding: 0 8rem 2.5rem 1.5rem;
+  padding: 0 6rem 2.5rem 1.5rem;
 }
 
 .section-title .hl {
@@ -149,14 +149,14 @@ section {
   border-radius: 500px;
 }
 
-.title a {
+a.btn {
   background-color: var(--green);
   color: white;
   text-align: center;
   gap: 0.5em;
 }
 
-.title a img {
+a.btn img {
   width: 1.5em;
   height: 1.5em;
   filter: invert(100%) sepia(0%) saturate(7459%) hue-rotate(302deg) brightness(108%) contrast(97%);
@@ -262,6 +262,91 @@ section {
 .service-items .item-price {
   font-size: 0.8rem;
   opacity: 0.5;
+}
+
+.reviews {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+
+.reviews .section-title {
+  padding-right: 0;
+}
+
+.reviews .section-explain {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.reviews-panel {
+  grid-column: span 2;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+.reviews-panel > div {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.reviews-panel > div:nth-of-type(2) {
+  padding-top: 3rem;
+}
+
+.review {
+  background-color: white;
+  padding: 0.7rem;
+}
+
+.review h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 1em;
+}
+
+.review-img {
+  padding-bottom: 105%;
+  width: 100%;
+}
+
+.ri1 {
+  background: url(image/review1.jpg) no-repeat center / cover;
+}
+
+.ri2 {
+  background: url(image/review2.jpg) no-repeat center / cover;
+}
+
+.ri3 {
+  background: url(image/review3.jpg) no-repeat center / cover;
+}
+
+.ri4 {
+  background: url(image/review4.jpg) no-repeat center / cover;
+}
+
+.review img {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.2rem;
+}
+
+.review ul {
+  display: flex;
+  padding-top: 0.5rem;
+  opacity: 0.6;
+  font-size: 0.7rem;
+  gap:1.3em;
+}
+
+.review li {
+  display: flex;
+  align-items: center;
 }
 
 footer {
