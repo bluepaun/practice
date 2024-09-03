@@ -150,14 +150,16 @@ section {
   border-radius: 500px;
 }
 
-a.btn {
+a.btn,
+.contact button.btn {
   background-color: var(--green);
   color: white;
   text-align: center;
   gap: 0.5em;
 }
 
-a.btn img {
+a.btn img,
+button.btn img {
   width: 1.5em;
   height: 1.5em;
   filter: invert(100%) sepia(0%) saturate(7459%) hue-rotate(302deg)
@@ -475,6 +477,45 @@ a.btn img {
 
 .ex-4 {
   background-image: url(image/ex-4.jpg);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 1.5rem;
+}
+
+.contact form ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.8em;
+}
+
+.contact label {
+  font-size: 0.8em;
+  padding: 1em 0;
+  display: block;
+  opacity: 0.5;
+}
+
+.contact input,
+.contact select {
+  display: block;
+  font-size: 1.5rem;
+  border-bottom: solid 1px #17171788;
+  width: 100%;
+  padding: 1rem 0 0.5rem;
+}
+
+.contact .btn {
+  margin-top: 2em;
+}
+
+.contact {
+  margin-bottom: 7rem;
 }
 
 footer {
